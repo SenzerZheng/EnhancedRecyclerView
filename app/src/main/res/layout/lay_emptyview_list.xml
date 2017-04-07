@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.senzer.enhancedrecyclerview.view.SlidingEmptyLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_list_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_spider_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/dp_80"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_empty_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_spider_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="暂无内容"
+        android:textColor="#606060"
+        android:textSize="@dimen/sp_16" />
+</com.senzer.enhancedrecyclerview.view.SlidingEmptyLayout>

@@ -1,0 +1,12 @@
+<com.senzer.enhancedrecyclerview.EnhancedRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enhanced_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:minHeight="@dimen/dp_150"
+    app:layout_empty="@layout/lay_emptyview_list"
+    app:layout_moreProgress="@layout/lay_more_progress"
+    app:mainLayoutId="@layout/layout_enhanced_recyclerview"
+    app:recyclerClipToPadding="false"
+    app:scrollbarStyle="insideOverlay" />

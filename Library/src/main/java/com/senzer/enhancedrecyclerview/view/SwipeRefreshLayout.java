@@ -604,7 +604,7 @@ public class SwipeRefreshLayout extends ViewGroup {
      */
     public boolean isChildScrollToTop() {
         View swipeView = null;
-        if (mTarget instanceof RelativeLayout) {                // @see layout_spider_recyclerview.xml
+        if (mTarget instanceof RelativeLayout) {                // @see layout_enhanced_recyclerviewew.xml
             swipeView = ((ViewGroup) mTarget).getChildAt(0);
         } else {                                                // @see use EnhancedSwipeRefreshLayout at xml
             swipeView = mTarget;
@@ -639,7 +639,7 @@ public class SwipeRefreshLayout extends ViewGroup {
         }
 
         View swipeView = null;
-        if (mTarget instanceof RelativeLayout) {                // @see layout_spider_recyclerview.xml
+        if (mTarget instanceof RelativeLayout) {                // @see layout_enhanced_recyclerview.xmlml
             swipeView = ((ViewGroup) mTarget).getChildAt(0);
         } else {                                                // @see use EnhancedSwipeRefreshLayout at xml
             swipeView = mTarget;

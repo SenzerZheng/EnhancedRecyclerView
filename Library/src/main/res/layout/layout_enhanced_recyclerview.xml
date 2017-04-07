@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:inflatedId="@id/more_progress" />
 
-    <com.spider.base.widget.load.SpiderSwipeRefreshLayout
+    <com.senzer.enhancedrecyclerview.view.SwipeRefreshLayout
         android:id="@+id/ptr_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,7 +36,7 @@
                 android:visibility="gone" />
         </RelativeLayout>
 
-    </com.spider.base.widget.load.SpiderSwipeRefreshLayout>
+    </com.senzer.enhancedrecyclerview.view.SwipeRefreshLayout>
 
     <ViewStub
         android:id="@android:id/progress"
