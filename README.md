@@ -10,7 +10,7 @@ This is a library for android to swipe base on RecyclerView
 # How to use
 
 
-## 1.Add the dependency：
+## 1. Add the dependency：
 
 ### Gradle
 
@@ -18,7 +18,7 @@ This is a library for android to swipe base on RecyclerView
 compile 'com.github.SenzerZheng:EnhancedRecyclerView:1.0'
 ```
 
-## 2.Add the following code in your Layout：
+## 2. Add the following code in your Layout：
 
 ```xml
 <com.senzer.enhancedrecyclerview.EnhancedRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -37,7 +37,7 @@ compile 'com.github.SenzerZheng:EnhancedRecyclerView:1.0'
 
 ## 3.Add the following code in your Activity：
 
-* initial
+* initialize the instance
 ```java
 enhancedRecyclerView = (EnhancedRecyclerView) findViewById(R.id.enhanced_recycler);
 enhancedRecyclerView.setLayoutManager(getLayoutManager());
@@ -45,7 +45,7 @@ enhancedRecyclerView.setRefreshListener(this);
 enhancedRecyclerView.setupMoreListener(this, 1);
 ```
 
-* implements OnRefreshListener, OnMoreListener
+* implements OnRefreshListener and OnMoreListener
 ```java=
 @Override
 public void onRefresh() {
@@ -60,7 +60,7 @@ public void onRefresh() {
             }
             adapter.setDataSource(users, false);
 
-            Toast.makeText(RecycleDemoActivity.this, "刷新成功！", Toast.LENGTH_LONG);
+            Toast.makeText(RecycleDemoActivity.this, "refresh ok", Toast.LENGTH_LONG);
             refreshComplete();
         }
     }, 2000);
@@ -79,7 +79,7 @@ public void onMoreAsked(int overallItemsCount, int itemsBeforeMore, int maxLastV
             }
             adapter.setDataSource(users, true);
 
-            Toast.makeText(RecycleDemoActivity.this, "加载更多成功！", Toast.LENGTH_LONG);
+            Toast.makeText(RecycleDemoActivity.this, "loading more ok", Toast.LENGTH_LONG);
             refreshComplete();
         }
     }, 2000);
