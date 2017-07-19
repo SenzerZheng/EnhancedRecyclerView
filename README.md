@@ -12,10 +12,19 @@ This is a library for android to swipe base on RecyclerView
 
 ## 1. Add the dependency：
 
-### Gradle
-
+* moudle gradle
 ```java
-compile 'com.github.SenzerZheng:EnhancedRecyclerView:1.0'
+compile 'com.github.SenzerZheng:EnhancedRecyclerView:1.2'
+```
+
+* project gradle
+```java
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 ## 2. Add the following code in your Layout：
